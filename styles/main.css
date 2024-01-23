@@ -16,11 +16,18 @@ html {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(100pxx, 1fr));
     grid-template-columns: 1fr 1fr 1fr;
-
-    margin-top: 5em;
+   
     justify-items: center;
+}
+
+.container-homepage {
+    margin-top: 5em;
     align-items: center;
     height: 100vh;
+}
+
+.container-results {
+    margin-top: 2em;
 }
 
 .homepage-logo {
