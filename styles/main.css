@@ -39,14 +39,13 @@ html {
     width: 10.5rem;
 }
 
-.homepage-search-bar {
+.search-bar {
     grid-column: 1/-1;
     grid-row: 2;
 }
 
-.homepage-search-bar input {
-    width: 66vh;
-    height: 5rem;
+.search-bar input {
+    width: 66vw;
     padding-left: 0.75em;
     box-shadow: 2px 3px 20px 1px rgba(0, 0, 0, 0.1);
     border: 0px solid transparent;
@@ -54,30 +53,36 @@ html {
     outline: none;
 }
 
-.homepage-search-bar input:hover {
+.search-bar input:hover {
     outline: none;
     box-shadow: 2px 3px 20px 1px rgba(0, 0, 0, 0.3);
 }
 
-.homepage-search-bar input[type="text"] {
+.search-bar input[type="text"] {
     font-size: 2.5em;
     font-family: 'Font Awesome\ 5 Free', Arial, Helvetica, sans-serif;
     color: #A4A4A4;
 }
 
-.homepage-search-bar input[type="text"]:focus {
+.search-bar input[type="text"]:focus {
     font-size: 2.5em;
     font-family: 'Font Awesome\ 5 Free', Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 
-.homepage-search-bar p {
+.search-bar p {
     color: #b3b3b3;
     font-size: 1.4rem;
     line-height: 1.7rem;
     margin-top: 2.3rem;
     text-align: right;
 }
+
+.homepage-search-bar input {
+    height: 11.8rem;
+}
+
+
 
 .recent-posts-wrapper {
     grid-column: 1/-1;
@@ -113,7 +118,7 @@ html {
 .results-posts-wrapper {
     grid-row: 3;
     grid-column: 1/-1;
-    width: 66vh;
+    width: 66vw;
 }
 
 .post {
@@ -131,4 +136,27 @@ html {
     color: #535353;
     text-decoration: none;
     font-size: 1.8rem;
+}
+
+.result-post-links-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 2rem;
+    margin-top: 2rem;
+}
+
+.result-search-bar input {
+    height: 5rem;
+    margin-bottom: 1em;
+    margin-top: 3em;
+}
+
+.result-post-link {
+    text-decoration: none;
+    color: #535353;
+    font-size: 1.4rem;
+}
+
+.result-post-link:hover {
+    text-decoration: underline;
 }
